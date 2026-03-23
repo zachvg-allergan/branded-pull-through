@@ -1,0 +1,772 @@
+{% comment %} Track the UMID {% endcomment %}
+{% message_extras :key umid :value {{context.${umid}}} %}
+
+{% comment %} Track the promotion_id {% endcomment %}
+{% message_extras :key promotion_id :value {{context.${promotion_id}}} %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <title></title>
+  <!--[if mso]>
+  <style type="text/css">
+    table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
+    div, td {padding:0;}
+    div {margin:0 !important;}
+  </style>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style type="text/css">
+    @media screen and (max-width: 480px) {
+      .dt {
+        display: none !important;
+      }
+
+      .mb {
+        display: block !important;
+      }
+
+      .mb-font-size-11 {
+        font-size: 11px !important;
+      }
+
+      .mb-font-size-14 {
+        font-size: 14px !important;
+      }
+
+      .mb-font-size-16 {
+        font-size: 16px !important;
+      }
+
+      .mb-font-size-18 {
+        font-size: 18px !important;
+      }
+
+      .mb-font-size-20 {
+        font-size: 20px !important;
+      }
+
+      .mb-font-size-26 {
+        font-size: 26px !important;
+      }
+
+      .mb-font-size-28 {
+        font-size: 28px !important;
+      }
+
+      .mb-font-size-30 {
+        font-size: 30px !important;
+      }
+
+      .mb-font-size-36 {
+        font-size: 36px !important;
+      }
+
+      .mb-font-size-50 {
+        font-size: 50px !important;
+      }
+
+      .mb-font-size-54 {
+        font-size: 54px !important;
+      }
+
+      .mb-line-height-18 {
+        line-height: 18px !important;
+      }
+
+      .mb-line-height-22 {
+        line-height: 22px !important;
+      }
+
+      .mb-line-height-32 {
+        line-height: 32px !important;
+      }
+
+      .mb-line-height-42 {
+        line-height: 42px !important;
+      }
+
+      .mb-line-height-54 {
+        line-height: 54px !important;
+      }
+
+      .mb-line-height-56 {
+        line-height: 56px !important;
+      }
+
+      .mb-letter-spacing-negative-1 {
+        letter-spacing: -1px !important;
+      }
+
+      .mb-letter-spacing-negative-point-3 {
+        letter-spacing: -0.3px !important;
+      }
+
+      .mb-width-100 {
+        width: 100px !important;
+      }
+
+      .mb-width-250 {
+        width: 250px !important;
+      }
+
+      .mb-width-34-percent {
+        width: 34% !important;
+      }
+
+      .mb-width-100-percent {
+        width: 100% !important;
+      }
+
+      .mb-padding-bottom-24 {
+        padding-bottom: 24px !important;
+      }
+
+      .mb-padding-left-0 {
+        padding-left: 0px !important;
+      }
+
+      .mb-padding-left-20 {
+        padding-left: 20px !important;
+      }
+
+      .mb-padding-bottom-40 {
+        padding-bottom: 40px !important;
+      }
+
+      .mb-display-block {
+        display: block !important;
+      }
+
+      .headline-1 {
+        font-size: 32px !important;
+        line-height: 34px !important;
+        letter-spacing: -0.3px !important;
+      }
+
+      .headline-2 {
+        font-size: 26px !important;
+        line-height: 28px !important;
+      }
+
+      .headline-3 {
+        font-size: 50px !important;
+        line-height: 52px !important;
+      }
+
+      .headline-4 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+
+      .headline-5 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+
+      .headline-6 {
+        font-size: 40px !important;
+        line-height: 42px !important;
+      }
+
+      .headline-7 {
+        font-size: 34px !important;
+        line-height: 34px !important;
+        letter-spacing: -2px !important;
+      }
+
+      .headline-8 {
+        font-size: 60px !important;
+        line-height: 62px !important;
+      }
+
+      .superscript-1 {
+        font-size: 20px !important;
+        vertical-align: 8px !important;
+      }
+
+      .superscript-2 {
+        font-size: 12px !important;
+        vertical-align: 11px !important;
+      }
+
+      .superscript-3 {
+        font-size: 10px !important;
+      }
+
+      .superscript-4 {
+        font-size: 18px !important;
+        vertical-align: 14px !important;
+      }
+
+      .superscript-5 {
+        font-size: 14px !important;
+        vertical-align: 16px !important;
+      }
+
+      .superscript-6 {
+        font-size: 10px !important;
+        vertical-align: 8px !important;
+      }
+
+      .list-number {
+        font-size: 40px !important;
+        line-height: 42px !important;
+      }
+
+      .list-copy {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+
+    }
+
+    @media screen and (max-width: 380px) {
+      .headline-1 {
+        font-size: 30px !important;
+        line-height: 32px !important;
+      }
+
+      .mb-380-font-size-14 {
+        font-size: 14px !important;
+      }
+
+      .mb-380-font-size-28 {
+        font-size: 28px !important;
+      }
+
+      .mb-380-font-size-32 {
+        font-size: 32px !important;
+      }
+
+      .mb-380-font-size-42 {
+        font-size: 42px !important;
+      }
+
+      .mb-380-font-size-46 {
+        font-size: 46px !important;
+      }
+
+      .mb-380-line-height-36 {
+        line-height: 36px !important;
+      }
+
+      .mb-380-line-height-44 {
+        line-height: 44px !important;
+      }
+
+      .mb-380-line-height-48 {
+        line-height: 48px !important;
+      }
+
+      .mb-380-letter-spacing-neg-2 {
+        letter-spacing: -2px !important;
+      }
+
+      .cta-1 {
+        width: 124px !important;
+      }
+
+      .cta-2 {
+        width: 125px !important;
+      }
+
+      .cta-3 {
+        width: 180px !important;
+      }
+
+      .cta-4 {
+        width: 140px !important;
+      }
+
+      .cta-5 {
+        width: 108px !important;
+      }
+
+      .cta-6 {
+        width: 121px !important;
+      }
+
+      .cta-7 {
+        width: 130px !important;
+      }
+
+      .cta-8 {
+        width: 114px !important;
+      }
+
+      .cta-9 {
+        width: 129px !important;
+      }
+
+      .cta-10 {
+        width: 132px !important;
+      }
+
+      .cta-11 {
+        width: 178px !important;
+      }
+
+      .cta-12 {
+        width: 164px !important;
+      }
+
+      .cta-13 {
+        width: 152px !important;
+      }
+
+      .cta-14 {
+        width: 145px !important;
+      }
+
+      .cta-15 {
+        width: 209px !important;
+      }
+
+      .cta-16 {
+        width: 160px !important;
+      }
+
+      .cta-17 {
+        width: 170px !important;
+      }
+
+      .cta-18 {
+        width: 127px !important;
+      }
+
+      .cta-19 {
+        width: 187px !important;
+      }
+
+      .cta-20 {
+        width: 120px !important;
+      }
+
+      .cta-21 {
+        width: 185px !important;
+      }
+
+      .cta-22 {
+        width: 229px !important;
+      }
+
+      .mb-380-padding-25-horizontal {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
+      .mb-380-padding-left {
+        padding-left: 20px !important;
+      }
+
+      .mb-380-padding-right {
+        padding-right: 20px !important;
+      }
+    }
+
+    @media screen and (min-width: 481px) {
+      .mb {
+        display: none !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="body" style="margin:0;padding:0;word-spacing:normal;background-color:#FFFFFF;">
+  <div role="article" aria-roledescription="email" lang="en"
+    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#FFFFFF;">
+    <table role="presentation" style="width:100%;border:0;border-spacing:0;">
+      <tr>
+        <td align="center">
+          <!--[if mso]>
+          <table role="presentation" align="center" style="width:640px;">
+          <tr>
+          <td style="padding:0;">
+          <![endif]-->
+          <div class="outer" style="width:100%;max-width:640px;margin:0 auto;">
+            <!-- Preheader Start -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td style="display: none !important; mso-hide: all; line-height:1px;">
+                  <div class="container">
+                    <p
+                      style="font-family:'Helvetica', Arial, sans-serif; font-size: 1px; font-weight: 400; line-height: 1px; letter-spacing: 0; margin: 0;">
+
+                      Redeem before it expires on {{context.${expiration_date}}}
+
+                      <span
+                        style="display: none; max-height: 0px; overflow: hidden;">&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&#8199;&#847;
+                        &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy;&nbsp;</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <!-- Preheader End -->
+            <!-- Header Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding:0px; margin:0px; width:100%; background-color: #FFFFFF">
+              <tr>
+                <td class="dt" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF;">
+                  <a href="https://alle.com/?lid=8cfi4qt1itvi" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6e6c92a0063edf187/original.png?1733871350"
+                      width="640" border="0" style="display:block; width: 100%; max-width: 640px; height: auto;">
+                  </a>
+                </td>
+                <td class="mb" bgcolor="#FFFFFF" align="center" style="display: none; background-color: #FFFFFF;">
+                  <a href="https://alle.com/?lid=2cnqatk7wwrk" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6a4948100631ef644/original.png?1733871350"
+                      width="480" border="0" style="display: block; width: 100%; max-width: 480px; height: auto;">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-font-size-14" align="center" valign="middle" bgcolor="#FFFCB8" height="24"
+                  style="padding: 10px 10px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 16px; letter-spacing: -0.2px; vertical-align: middle">
+                  {% if ${first_name} != nil and ${first_name} != ""
+                  %}{{${first_name}|capitalize}}&nbsp;&nbsp;|&nbsp;&nbsp;{% endif
+                  %}{{custom_attribute.${alle_available_points} | default: 0 | number_with_delimiter }}
+                  pts&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://alle.com/account/wallet?lid=macstro0tghg" target="_blank"
+                    style="color:#000000; text-decoration:underline!important;">See Wallet</a>
+                </td>
+              </tr>
+            </table>
+            <!-- Header End -->
+            <!-- Pod 1 Start -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+              style="padding: 0px; margin: 0px; width: 100%;">
+              <tr>
+                <td class="headline-1 mb-letter-spacing-negative-point-3 mb-380-padding-25-horizontal" align="left"
+                  valign="middle" bgcolor="#6F9392"
+                  style="padding: 40px; background-color: #6F9392; font-family: Arial, sans-serif; color: #090909; font-size: 60px; mso-line-height-rule: exactly; line-height: 62px; font-weight:700; letter-spacing: -3px;">
+                  A ${{context.${value}}} LATISSE<sup class="superscript-4"
+                    style="font-size: 24px; line-height: 0; vertical-align:26px;">&reg;</sup> offer is in your
+                  Wallet!
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 0;">
+                  <img alt="A woman resting her head on her palm"
+                    src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc89d272d3ad0063e21137/original.png?1773963729"
+                    width="640" border="0" style="display: block; width: 100%; max-width: 100%; height: auto;">
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#6F9392"
+                  style="padding: 40px; background-color: #6F9392;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                    style="padding: 0px; margin: 0px; width: 100%;">
+                    <tr>
+                      <td align="left" valign="middle" bgcolor="#6F9392"
+                        style="padding: 0 0 40px 0; background-color: #6F9392; font-family: Arial, sans-serif; color: #090909; font-size: 16px; mso-line-height-rule: exactly; line-height: 22px; letter-spacing: -0.2px;">
+                        Your special offer won't last forever! Redeem at your provider's office to save ${{context.${value}}}. Hurry&mdash;offer expires {{context.${expiration_date}}}.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#6F9392"
+                        style="background-color: #6F9392; padding: 0 0 40px 0;">
+                        <a href="https://alle.com/account/wallet?utm_campaign=LAT-US-BrandedPullThrough-OfferPull-2026_101069&utm_source=alle&utm_medium=email&utm_term=lat&utm_content=viewwallet&lid=33aeaske1s1a"
+                          target="_blank">
+                          <img class="cta-1" alt="Shop Now"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/684761d13f61600064c1f902/original.png?1749508560"
+                            width="149" border="0" style="display:block; width: 149px; height:auto;">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#6F9392"
+                        style="padding: 0; background-color: #6F9392; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
+                        See offer <a
+                          href="https://alle.com/account/wallet?utm_campaign=LAT-US-BrandedPullThrough-OfferPull-2026_101069&utm_source=alle&utm_medium=email&utm_term=lat&utm_content=terms&lid=4x6fiam7051x"
+                          target="_blank"
+                          style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Terms
+                          and Conditions</a>.<br>
+                          &nbsp;<br>
+                          LATISSE is an FDA-approved treatment to grow eyelashes for people with inadequate or not enough lashes. Do not use LATISSE if you are allergic to one of its ingredients. See more <a href="#latisse-isi" target="_blank" style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Important Safety Information</a> below and speak to your doctor to see if it's right for you.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Pod 1 End -->
+            <!-- Pod 2 Start -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+              style="padding: 0px; margin: 0px; width: 100%;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="center" valign="middle" bgcolor="#FCF4E8"
+                  style="padding: 40px; background-color: #FCF4E8;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FCF4E8"
+                    style="padding: 0px; margin: 0px; width: 100%; background-color: #FCF4E8;">
+                    <tr>
+                      <td class="headline-2" align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 40px 0; background-color: #FCF4E8; font-family:Arial, sans-serif; color: #090909; font-size: 40px; font-weight: 700; mso-line-height-rule: exactly; line-height: 42px; letter-spacing: -0.3px;">
+                        Grow your lashes
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 40px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 16px; line-height: 22px; letter-spacing: -0.2px; mso-line-height-rule: exactly;">
+                        LATISSE is the first prescription product to treat inadequate lashes. At 16 weeks in the clinical study, lashes were:
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding: 0;">
+                        <img
+                          alt="A woman looking to the right"
+                          src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc89d21dc5330063cc44dd/original.png?1773963729"
+                          width="560" border="0" style="display: block; width: 100%; height: auto;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#B5C8C7"
+                        style="background-color: #B5C8C7; padding: 16px; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
+                        <b>Real patient. Results may vary. PRESCRIPTION ONLY.</b> Unretouched, real lashes. No mascara. No extensions. No lash inserts.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 40px 0 8px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 26px; mso-line-height-rule: exactly; line-height: 28px; letter-spacing: -0.2px; font-weight: 700;">
+                        106% Fuller
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 24px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px; border-bottom: 1px solid black;">
+                        (136 LATISSE patients) vs 12% for placebo group (140 patients)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 24px 0 8px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 26px; mso-line-height-rule: exactly; line-height: 28px; letter-spacing: -0.2px; font-weight: 700;">
+                        25% Longer
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 24px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px; border-bottom: 1px solid black;">
+                        (137 LATISSE patients) vs 2% for placebo group (141 patients)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 24px 0 8px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 26px; mso-line-height-rule: exactly; line-height: 28px; letter-spacing: -0.2px; font-weight: 700;">
+                        18% Darker
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 24px 0; background-color: #FCF4E8; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
+                        (135 LATISSE patients) vs 3% for placebo group (138 patients)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#FCF4E8"
+                        style="padding: 0; background-color: #FCF4E8;">
+                        <a href="https://alle.com/treatment-guide/latisse?utm_campaign=LAT-US-BrandedPullThrough-OfferPull-2026_101069&utm_source=alle&utm_medium=email&utm_term=lat&utm_content=learnmore&lid=sshe3kke8ldv"
+                          target="_blank">
+                          <img class="cta-1" alt="Learn More"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/675cd59cc3ce75006379aa73/original.png?1734137244"
+                            width="148" border="0" style="display:block; width: 148px; height:auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Pod 2 End -->
+            <!-- Discover Pod Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 18px; line-height: 24px; font-weight: 700; border-bottom: 1px solid black;">
+                  Discover All&#275;
+                </td>
+              </tr>
+              <tr>
+                <td class="dt" align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 18px; letter-spacing: 0.98px; border-bottom: 1px solid black;">
+                  <a href="tel:18889121572" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">1.888.912.1572</a>
+                  | <a href="https://www.instagram.com/alle?lid=w1ww8knzkcfx" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">INSTAGRAM</a> | <a
+                    href="https://www.facebook.com/alle?lid=o96u7d065l4w" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">FACEBOOK</a>
+                </td>
+                <!--[if !mso]><!-- -->
+                <td class="mb" align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="display: none; padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 18px; letter-spacing: 0.98px; border-bottom: 1px solid black;">
+                  <a href="tel:18889121572" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">1.888.912.1572</a><br>&nbsp;<br><a
+                    href="https://www.instagram.com/alle?lid=1jab4t86ilot" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">INSTAGRAM</a><br>&nbsp;<br><a
+                    href="https://www.facebook.com/alle?lid=wumlqqdpwuw2" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">FACEBOOK&nbsp;</a>
+                </td>
+                <!--<![endif]-->
+              </tr>
+              <tr>
+                <td align="center" valign="middle" bgcolor="#FFFFFF" style="padding: 24px 20px;">
+                  <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+                    style="padding:0px; margin:0px; background-color: #FFFFFF;">
+                    <tr>
+                      <td align="right" valign="middle" bgcolor="#FFFFFF" width="100"
+                        style="background-color: FFFFFF; width: 100px; padding: 0;">
+                        <a href="https://apps.apple.com/us/app/all%C4%93/id720207987?lid=xdioo1bnbp2d" target="_blank">
+                          <img alt="Apple App Store icon"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/6759dd982a39ad0063d95e97/original.png?1733942680"
+                            width="81" border="0" style="display: block; width: 81px; height: auto;">
+                        </a>
+                      </td>
+                      <td width="40" align="center" valign="middle" bgcolor="#FFFFFF"
+                        style="width: 40px; background-color: FFFFFF;">&nbsp;</td>
+                      <td align="left" valign="middle" bgcolor="#FFFFFF" width="100"
+                        style="background-color: FFFFFF; width: 100px; padding: 0;">
+                        <a href="https://play.google.com/store/apps/details?id=com.allergan.bd.bdmobileapp&hl=en_US&gl=US&lid=sgx8ns4m6mln"
+                          target="_blank">
+                          <img alt="Google Play icon"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/6759dd98b41ab20063d19804/original.png?1733942680"
+                            width="93" border="0" style="display: block; width: 93px; height: auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Discover Pod End -->
+            <!-- Latisse ISI Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+            <tr>
+              <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF" style="padding: 0px 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                <a name="latisse-isi" style="height: 0px;">&nbsp;</a><br>
+                <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> (bimatoprost ophthalmic solution) 0.03% Important Information</b><br>
+                &nbsp;<br>
+                <b>Approved Use</b><br>
+                &nbsp;<br>
+                <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup></b> is an FDA-approved treatment to grow eyelashes for people with inadequate or not enough lashes.<br>
+                &nbsp;<br>
+                <b>Important Safety Information</b><br>
+                &nbsp;<br>
+                Do not use <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup></b> if you are allergic to one of its ingredients. If you use/used prescription products for eye pressure problems, use <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup></b> under doctor care. May cause brown darkening of the colored part of the eye which is likely permanent. <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup></b> may cause eyelid skin darkening which may be reversible. Only apply at base of upper lashes. DO NOT APPLY to lower lid. Hair may grow outside the treatment area. If you have eye problems/surgery, consult your doctor. Common side effects include itchy and red eyes. If discontinued, lashes gradually return to previous appearance.<br>
+                &nbsp;<br>
+                These are not all the possible side effects of <b>LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup></b>. For more information, please talk to your doctor.<br>
+                &nbsp;<br>
+                <b>Please see LATISSE<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> full <a href="https://www.rxabbvie.com/pdf/latisse_pi.pdf?lid=3ikr309apjuc" style="color: #090909; text-decoration: underline;"> Product Information</a>.</b>
+              </td>
+            </tr>
+          </table>
+            <!-- Latisse ISI End -->
+            <!-- Offer Info Pod Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0px 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                  <b>Offer Information</b><br>
+                  Must be an All&#275; Member to redeem. This offer can only be redeemed at participating All&#275;
+                  provider offices. See offer <a href="https://alle.com/account/wallet?lid=7760ywk59q1a" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Terms and
+                    Conditions</a>.
+                </td>
+              </tr>
+            </table>
+            <!-- Offer Info Pod End -->
+            <!-- Footer Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td bgcolor="#FFFFFF" align="center"
+                  style="padding: 40px 40px 24px 40px; background-color: #FFFFFF; border-top: 1px solid black;">
+                  <a href="https://alle.com/?lid=2falqdyu4pv1" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/675a15b2d06e910063d22740/original.png?1733957041"
+                      width="70" border="0" style="display:block; width: 70px; height: auto;">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px;">
+                  &copy; 2026 AbbVie. All rights reserved. Allē and its design are trademarks of Allergan, Inc., an AbbVie company. LATISSE and its design are trademarks of Allergan, Inc., an AbbVie company. Allergan Aesthetics reserves the right to alter or cancel the program with no advance notice or obligation. AbbVie Inc., 1&nbsp;North Waukegan R&zwj;d.,&zwj; North Chicago,&zwj;I&zwj;L 6&zwj;0064 U&zwj;SA. SOLICITATION. US-SKC-01151 02&zwnj;/26<br>&nbsp;<br>
+                  <b>Please do not reply to this email</b>. If you would like to contact us, please mail all
+                  communications to: Allergan, P.O. Box 19534, &zwnj;Irvine, CA &zwnj;92623 USA.
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; font-weight: 700;">
+                  <a href="https://privacy.abbvie/privacy-policies/us-privacy-policy.html?lid=bmpx5q2rqcvc" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Privacy
+                    Notice</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="https://www.allerganaesthetics.com/?lid=6d4pb1dx6dgb" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">AllerganAesthetics.com</a>&nbsp;
+                  <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="https://www.abbvie.com/contactus.html?lid=kxitpj2z9nus" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Contact
+                    Us</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="{{${preference_center_url}}}" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Email
+                    Preferences</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="{{${preference_center_url}}}" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Unsubscribe</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFCB8"
+                  style="padding: 40px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 20px; mso-line-height-rule: exactly; line-height: 28px;">
+                  Brought to you by Allē <br>
+                  Your premier loyalty program
+                </td>
+              </tr>
+            </table>
+            <!-- Footer End -->
+          </div>
+          <!--[if mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

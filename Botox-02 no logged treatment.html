@@ -1,0 +1,888 @@
+{% comment %} Track the UMID {% endcomment %}
+{% message_extras :key umid :value {{context.${umid}}} %}
+
+{% comment %} Track the promotion_id {% endcomment %}
+{% message_extras :key promotion_id :value {{context.${promotion_id}}} %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <title></title>
+  <!--[if mso]>
+  <style type="text/css">
+    table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
+    div, td {padding:0;}
+    div {margin:0 !important;}
+  </style>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style type="text/css">
+    @media screen and (max-width: 480px) {
+      .dt {
+        display: none !important;
+      }
+
+      .mb {
+        display: block !important;
+      }
+
+      .mb-font-size-11 {
+        font-size: 11px !important;
+      }
+
+      .mb-font-size-14 {
+        font-size: 14px !important;
+      }
+
+      .mb-font-size-16 {
+        font-size: 16px !important;
+      }
+
+      .mb-font-size-18 {
+        font-size: 18px !important;
+      }
+
+      .mb-font-size-20 {
+        font-size: 20px !important;
+      }
+
+      .mb-font-size-26 {
+        font-size: 26px !important;
+      }
+
+      .mb-font-size-28 {
+        font-size: 28px !important;
+      }
+
+      .mb-font-size-30 {
+        font-size: 30px !important;
+      }
+
+      .mb-font-size-36 {
+        font-size: 36px !important;
+      }
+
+      .mb-font-size-50 {
+        font-size: 50px !important;
+      }
+
+      .mb-font-size-54 {
+        font-size: 54px !important;
+      }
+
+      .mb-line-height-18 {
+        line-height: 18px !important;
+      }
+
+      .mb-line-height-22 {
+        line-height: 22px !important;
+      }
+
+      .mb-line-height-32 {
+        line-height: 32px !important;
+      }
+
+      .mb-line-height-42 {
+        line-height: 42px !important;
+      }
+
+      .mb-line-height-54 {
+        line-height: 54px !important;
+      }
+
+      .mb-line-height-56 {
+        line-height: 56px !important;
+      }
+
+      .mb-letter-spacing-negative-1 {
+        letter-spacing: -1px !important;
+      }
+
+      .mb-letter-spacing-negative-point-3 {
+        letter-spacing: -0.3px !important;
+      }
+
+      .mb-width-100 {
+        width: 100px !important;
+      }
+
+      .mb-width-250 {
+        width: 250px !important;
+      }
+
+      .mb-width-34-percent {
+        width: 34% !important;
+      }
+
+      .mb-width-100-percent {
+        width: 100% !important;
+      }
+
+      .mb-padding-bottom-24 {
+        padding-bottom: 24px !important;
+      }
+
+      .mb-padding-left-0 {
+        padding-left: 0px !important;
+      }
+
+      .mb-padding-left-20 {
+        padding-left: 20px !important;
+      }
+
+      .mb-padding-bottom-40 {
+        padding-bottom: 40px !important;
+      }
+
+      .mb-display-block {
+        display: block !important;
+      }
+
+      .headline-1 {
+        font-size: 32px !important;
+        line-height: 34px !important;
+        letter-spacing: -0.3px !important;
+      }
+
+      .headline-2 {
+        font-size: 26px !important;
+        line-height: 28px !important;
+      }
+
+      .headline-3 {
+        font-size: 50px !important;
+        line-height: 52px !important;
+      }
+
+      .headline-4 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+
+      .headline-5 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+
+      .headline-6 {
+        font-size: 40px !important;
+        line-height: 42px !important;
+      }
+
+      .headline-7 {
+        font-size: 34px !important;
+        line-height: 34px !important;
+        letter-spacing: -2px !important;
+      }
+
+      .headline-8 {
+        font-size: 60px !important;
+        line-height: 62px !important;
+      }
+
+      .superscript-1 {
+        font-size: 20px !important;
+        vertical-align: 8px !important;
+      }
+
+      .superscript-2 {
+        font-size: 12px !important;
+        vertical-align: 11px !important;
+      }
+
+      .superscript-3 {
+        font-size: 10px !important;
+      }
+
+      .superscript-4 {
+        font-size: 18px !important;
+        vertical-align: 14px !important;
+      }
+
+      .superscript-5 {
+        font-size: 14px !important;
+        vertical-align: 16px !important;
+      }
+
+      .superscript-6 {
+        font-size: 10px !important;
+        vertical-align: 8px !important;
+      }
+
+      .list-number {
+        font-size: 40px !important;
+        line-height: 42px !important;
+      }
+
+      .list-copy {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+
+    }
+
+    @media screen and (max-width: 380px) {
+      .headline-1 {
+        font-size: 30px !important;
+        line-height: 32px !important;
+      }
+
+      .mb-380-font-size-14 {
+        font-size: 14px !important;
+      }
+
+      .mb-380-font-size-28 {
+        font-size: 28px !important;
+      }
+
+      .mb-380-font-size-32 {
+        font-size: 32px !important;
+      }
+
+      .mb-380-font-size-42 {
+        font-size: 42px !important;
+      }
+
+      .mb-380-font-size-46 {
+        font-size: 46px !important;
+      }
+
+      .mb-380-line-height-36 {
+        line-height: 36px !important;
+      }
+
+      .mb-380-line-height-44 {
+        line-height: 44px !important;
+      }
+
+      .mb-380-line-height-48 {
+        line-height: 48px !important;
+      }
+
+      .mb-380-letter-spacing-neg-2 {
+        letter-spacing: -2px !important;
+      }
+
+      .cta-1 {
+        width: 124px !important;
+      }
+
+      .cta-2 {
+        width: 125px !important;
+      }
+
+      .cta-3 {
+        width: 180px !important;
+      }
+
+      .cta-4 {
+        width: 140px !important;
+      }
+
+      .cta-5 {
+        width: 108px !important;
+      }
+
+      .cta-6 {
+        width: 121px !important;
+      }
+
+      .cta-7 {
+        width: 130px !important;
+      }
+
+      .cta-8 {
+        width: 114px !important;
+      }
+
+      .cta-9 {
+        width: 129px !important;
+      }
+
+      .cta-10 {
+        width: 132px !important;
+      }
+
+      .cta-11 {
+        width: 178px !important;
+      }
+
+      .cta-12 {
+        width: 164px !important;
+      }
+
+      .cta-13 {
+        width: 152px !important;
+      }
+
+      .cta-14 {
+        width: 145px !important;
+      }
+
+      .cta-15 {
+        width: 209px !important;
+      }
+
+      .cta-16 {
+        width: 160px !important;
+      }
+
+      .cta-17 {
+        width: 170px !important;
+      }
+
+      .cta-18 {
+        width: 127px !important;
+      }
+
+      .cta-19 {
+        width: 187px !important;
+      }
+
+      .cta-20 {
+        width: 120px !important;
+      }
+
+      .cta-21 {
+        width: 185px !important;
+      }
+
+      .cta-22 {
+        width: 229px !important;
+      }
+
+      .mb-380-padding-25-horizontal {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
+      .mb-380-padding-left {
+        padding-left: 20px !important;
+      }
+
+      .mb-380-padding-right {
+        padding-right: 20px !important;
+      }
+    }
+
+    @media screen and (min-width: 481px) {
+      .mb {
+        display: none !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="body" style="margin:0;padding:0;word-spacing:normal;background-color:#FFFFFF;">
+  <div role="article" aria-roledescription="email" lang="en"
+    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#FFFFFF;">
+    <table role="presentation" style="width:100%;border:0;border-spacing:0;">
+      <tr>
+        <td align="center">
+          <!--[if mso]>
+          <table role="presentation" align="center" style="width:640px;">
+          <tr>
+          <td style="padding:0;">
+          <![endif]-->
+          <div class="outer" style="width:100%;max-width:640px;margin:0 auto;">
+            <!-- Preheader Start -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td style="display: none !important; mso-hide: all; line-height:1px;">
+                  <div class="container">
+                    <p
+                      style="font-family:'Helvetica', Arial, sans-serif; font-size: 1px; font-weight: 400; line-height: 1px; letter-spacing: 0; margin: 0;">
+
+                      Redeem before it expires on {{context.${expiration_date}}}
+
+                      <span
+                        style="display: none; max-height: 0px; overflow: hidden;">&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&#8199;&#847;
+                        &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847; &#8199;&#847;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+                        &shy; &shy;&nbsp;</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <!-- Preheader End -->
+            <!-- Header Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding:0px; margin:0px; width:100%; background-color: #FFFFFF">
+              <tr>
+                <td class="dt" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF;">
+                  <a href="https://alle.com/?lid=8mjfrlelwrso" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6e6c92a0063edf187/original.png?1733871350"
+                      width="640" border="0" style="display:block; width: 100%; max-width: 640px; height: auto;">
+                  </a>
+                </td>
+                <td class="mb" bgcolor="#FFFFFF" align="center" style="display: none; background-color: #FFFFFF;">
+                  <a href="https://alle.com/?lid=iq69nr5jhj89" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6a4948100631ef644/original.png?1733871350"
+                      width="480" border="0" style="display: block; width: 100%; max-width: 480px; height: auto;">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-font-size-14" align="center" valign="middle" bgcolor="#FFFCB8" height="24"
+                  style="padding: 10px 10px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 16px; letter-spacing: -0.2px; vertical-align: middle">
+                  {% if ${first_name} != nil and ${first_name} != ""
+                  %}{{${first_name}|capitalize}}&nbsp;&nbsp;|&nbsp;&nbsp;{% endif
+                  %}{{custom_attribute.${alle_available_points} | default: 0 | number_with_delimiter }}
+                  pts&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://alle.com/account/wallet?lid=gefik6q5sn2r" target="_blank"
+                    style="color:#000000; text-decoration:underline!important;">See Wallet</a>
+                </td>
+              </tr>
+            </table>
+            <!-- Header End -->
+            <!-- Pod 1 Start -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+              style="padding: 0px; margin: 0px; width: 100%;">
+              <tr>
+                <td class="headline-1 mb-letter-spacing-negative-point-3 mb-380-padding-25-horizontal" align="left"
+                  valign="middle" bgcolor="#9898FC"
+                  style="padding: 40px; background-color: #9898FC; font-family: Arial, sans-serif; color: #090909; font-size: 60px; mso-line-height-rule: exactly; line-height: 62px; font-weight:700; letter-spacing: -3px;">
+                  A ${{context.${value}}} BOTOX<sup class="superscript-4"
+                    style="font-size: 24px; line-height: 0; vertical-align:26px;">&reg;</sup> Cosmetic offer is in your
+                  Wallet!
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 0;">
+                  <img alt="A BOTOX Cosmetic vial"
+                    src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc21e618ec7c006320f018/original.png?1773937125"
+                    width="640" border="0" style="display: block; width: 100%; max-width: 100%; height: auto;">
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#9898FC"
+                  style="padding: 40px; background-color: #9898FC;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                    style="padding: 0px; margin: 0px; width: 100%;">
+                    <tr>
+                      <td align="left" valign="middle" bgcolor="#9898FC"
+                        style="padding: 0 0 40px 0; background-color: #9898FC; font-family: Arial, sans-serif; color: #090909; font-size: 16px; mso-line-height-rule: exactly; line-height: 22px; letter-spacing: -0.2px;">
+                        Your special offer won&apos;t last forever! Redeem on your first BOTOX Cosmetic treatment to enjoy ${{context.${value}}} off. Hurry&mdash;offer expires {{context.${expiration_date}}}.<br>
+                        &nbsp;<br>
+                        Book your consultation today!
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#9898FC"
+                        style="background-color: #9898FC; padding: 0 0 40px 0;">
+                        <a href="https://alle.com/account/wallet?utm_campaign=BTXC-US-BrandedPullThrough-OfferPull-2026_101065&utm_source=alle&utm_medium=email&utm_term=btxc2&utm_content=viewwallet&lid=ivqp6e87x0xp"
+                          target="_blank">
+                          <img class="cta-1" alt="Shop Now"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/684761d13f61600064c1f902/original.png?1749508560"
+                            width="149" border="0" style="display:block; width: 149px; height:auto;">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#9898FC"
+                        style="padding: 0; background-color: #9898FC; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
+                        See offer <a
+                          href="https://alle.com/account/wallet?utm_campaign=BTXC-US-BrandedPullThrough-OfferPull-2026_101065&utm_source=alle&utm_medium=email&utm_term=btxc2&utm_content=terms&lid=p1t44uf2em55"
+                          target="_blank"
+                          style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Terms
+                          and Conditions</a>.<br>
+                        &nbsp;<br>
+                        Please see <a href="#botox-isi" target="_blank"
+                          style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Important
+                          Safety Information</a>, including Boxed Warning, below.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Pod 1 End -->
+            <!-- Pod 2 Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FCF4E8"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FCF4E8;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="center" valign="middle" bgcolor="#FCF4E8"
+                  style="padding: 40px; background-color: #FCF4E8;">
+                  <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FCF4E8"
+                    style="padding: 0px; margin: 0px; width: 100%; background-color: #FCF4E8;">
+                    <tr>
+                      <td class="headline-2" align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 40px 0; background-color: #FCF4E8; font-family:Arial, sans-serif; color: #090909; font-size: 40px; font-weight: 700; mso-line-height-rule: exactly; line-height: 42px; letter-spacing: -0.3px;">
+                        The one &amp; only BOTOX Cosmetic
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#FCF4E8"
+                        style="padding: 0 0 40px 0; background-color: #FCF4E8; font-family:Arial, sans-serif; color: #090909; font-size: 16px; mso-line-height-rule: exactly; line-height: 22px; letter-spacing: -0.2px;">
+                        The only product of its kind FDA approved for over 20 years.<br>
+                        &nbsp;<br>
+                        Only BOTOX Cosmetic is FDA approved to temporarily improve the look of moderate to severe frown
+                        lines, crow's feet, forehead lines, and vertical bands connecting the neck and jaw (platysma
+                        bands) in&nbsp;adults.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#FCF4E8"
+                        style="padding: 0; background-color: #FCF4E8;">
+                        <a href="https://alle.com/treatment-guide/botox?utm_campaign=BTXC-US-BrandedPullThrough-OfferPull-2026_101065&utm_source=alle&utm_medium=email&utm_term=btxc2&utm_content=learnmore&lid=ltdml4lnch1w"
+                          target="_blank">
+                          <img class="cta-1" alt="Learn More"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/675cd59cc3ce75006379aa73/original.png?1734137244"
+                            width="148" border="0" style="display:block; width: 148px; height:auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Pod 2 End -->
+            <!-- Pod 3 Start -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+              style="padding: 0px; margin: 0px; width: 100%;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="center" valign="middle" bgcolor="#9898FC"
+                  style="padding: 40px; background-color: #9898FC;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#9898FC"
+                    style="padding: 0px; margin: 0px; width: 100%; background-color: #9898FC;">
+                    <tr>
+                      <td align="center" style="padding: 0;">
+                        <img
+                          alt="Actual patient treated with BOTOX Cosmetic and the JUVÉDERM Collection of Fillers. Results may vary."
+                          src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc25b34278d9006330a49c/original.png?1773938098"
+                          width="560" border="0" style="display: block; width: 100%; height: auto;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" bgcolor="#FCF4E8"
+                        style="background-color: #FCF4E8; padding: 16px; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px; letter-spacing: -0.2px; mso-line-height-rule: exactly;">
+                        Nicole, 27. Real BOTOX Cosmetic patient. Results&nbsp;may&nbsp;vary.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="headline-2" align="left" bgcolor="#9898FC"
+                        style="padding: 40px 0 40px 0; background-color: #9898FC; font-family:Arial, sans-serif; color: #090909; font-size: 40px; font-weight: 700; mso-line-height-rule: exactly; line-height: 42px; letter-spacing: -0.3px;">
+                        Book your consultation
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" bgcolor="#9898FC"
+                        style="padding: 0 0 40px 0; background-color: #9898FC; font-family: Arial, sans-serif; color: #090909; font-size: 16px; line-height: 22px; letter-spacing: -0.2px; mso-line-height-rule: exactly;">
+                        Start your journey with BOTOX Cosmetic by finding a licensed provider. They&apos;ll help you
+                        understand treatment options, develop your treatment schedule, discuss ways to save with Allē,
+                        and guide your decisions overall.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor="#9898FC"
+                        style="background-color: #9898FC; padding: 0;">
+                        <a href="https://discover.botoxcosmetic.com/search?utm_campaign=BTXC-US-BrandedPullThrough-OfferPull-2026_101065&utm_source=alle&utm_medium=email&utm_term=btxc2&utm_content=search&lid=81kn2ojzecg4"
+                          target="_blank">
+                          <img class="cta-16" alt="Learn More"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc26b2e9e23100636d48f1/original.png?1773938353"
+                            width="191" border="0" style="display:block; width: 191px; height:auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Pod 3 End -->
+            <!-- Discover Pod Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 18px; line-height: 24px; font-weight: 700; border-bottom: 1px solid black;">
+                  Discover All&#275;
+                </td>
+              </tr>
+              <tr>
+                <td class="dt" align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 18px; letter-spacing: 0.98px; border-bottom: 1px solid black;">
+                  <a href="tel:18889121572" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">1.888.912.1572</a>
+                  | <a href="https://www.instagram.com/alle?lid=fxwswkbblqpk" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">INSTAGRAM</a> | <a
+                    href="https://www.facebook.com/alle?lid=imdxvx0idlvd" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">FACEBOOK</a>
+                </td>
+                <!--[if !mso]><!-- -->
+                <td class="mb" align="center" valign="middle" bgcolor="#FFFFFF"
+                  style="display: none; padding: 24px 20px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 18px; letter-spacing: 0.98px; border-bottom: 1px solid black;">
+                  <a href="tel:18889121572" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">1.888.912.1572</a><br>&nbsp;<br><a
+                    href="https://www.instagram.com/alle?lid=lx63nf3b70t0" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">INSTAGRAM</a><br>&nbsp;<br><a
+                    href="https://www.facebook.com/alle?lid=3508162ko3ln" target="_blank"
+                    style="text-decoration: none !important; text-decoration: none; color: #000000;">FACEBOOK&nbsp;</a>
+                </td>
+                <!--<![endif]-->
+              </tr>
+              <tr>
+                <td align="center" valign="middle" bgcolor="#FFFFFF" style="padding: 24px 20px;">
+                  <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+                    style="padding:0px; margin:0px; background-color: #FFFFFF;">
+                    <tr>
+                      <td align="right" valign="middle" bgcolor="#FFFFFF" width="100"
+                        style="background-color: FFFFFF; width: 100px; padding: 0;">
+                        <a href="https://apps.apple.com/us/app/all%C4%93/id720207987?lid=dqd2vlwb7sae" target="_blank">
+                          <img alt="Apple App Store icon"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/6759dd982a39ad0063d95e97/original.png?1733942680"
+                            width="81" border="0" style="display: block; width: 81px; height: auto;">
+                        </a>
+                      </td>
+                      <td width="40" align="center" valign="middle" bgcolor="#FFFFFF"
+                        style="width: 40px; background-color: FFFFFF;">&nbsp;</td>
+                      <td align="left" valign="middle" bgcolor="#FFFFFF" width="100"
+                        style="background-color: FFFFFF; width: 100px; padding: 0;">
+                        <a href="https://play.google.com/store/apps/details?id=com.allergan.bd.bdmobileapp&hl=en_US&gl=US&lid=w216i1tldklo"
+                          target="_blank">
+                          <img alt="Google Play icon"
+                            src="https://braze-images.com/appboy/communication/assets/image_assets/images/6759dd98b41ab20063d19804/original.png?1733942680"
+                            width="93" border="0" style="display: block; width: 93px; height: auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Discover Pod End -->
+            <!-- Botox ISI Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                  <a name="botox-isi" style="height: 0px;">&nbsp;</a><br>
+                  <b>BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic
+                    (onabotulinumtoxinA)</b><br>
+                  &nbsp;<br>
+                  <b>IMPORTANT SAFETY INFORMATION</b><br>
+                  <b>BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic may
+                    cause serious side effects that can be life threatening. Get medical help right away if you have any
+                    of these problems any time (hours to weeks) after injection of BOTOX<sup
+                      style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic:</b><br>
+                  <table border="0" cellpadding="0" cellspacing="0" role="list"
+                    style="width:100%; border: 0; border-spacing: 0; background-color: #FFFFFF; color: #090909; ">
+                    <tr role="listitem">
+                      <td align="left" valign="top"
+                        style="padding-left: 10px; background-color: #FFFFFF; color: #090909; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
+                        &#x2022;
+                      </td>
+                      <td align="left" valign="top"
+                        style="padding-left: 10px; width: 100%; background-color: #FFFFFF; color: #090909; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
+                        <b>Problems swallowing, speaking, or breathing,</b> due to weakening of associated muscles,
+                        which can be severe and result in loss of life. You are at the highest risk if these problems
+                        are preexisting before injection. Swallowing problems may last for several months.
+                      </td>
+                    </tr>
+                    <tr role="listitem">
+                      <td align="left" valign="top"
+                        style="padding-left: 10px; background-color: #FFFFFF; color: #090909; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
+                        &#x2022;
+                      </td>
+                      <td align="left" valign="top"
+                        style="padding-left: 10px; width: 100%; background-color: #FFFFFF; color: #090909; font-family: Arial, sans-serif; font-size: 12px; line-height: 18px;">
+                        <b>Spread of toxin effects.</b> The effect of botulinum toxin may affect areas away from the
+                        injection site and cause serious symptoms, including loss of strength and all-over muscle
+                        weakness, double vision, blurred vision and drooping eyelids, hoarseness or change or loss of
+                        voice, trouble saying words clearly, loss of bladder control, trouble breathing, and trouble
+                        swallowing.
+                      </td>
+                    </tr>
+                  </table><br>
+                  &nbsp;<br>
+                  <b>BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic dosing
+                    units are not the same as, or comparable to, any other botulinum toxin product.</b><br>
+                  &nbsp;<br>
+                  There has not been a confirmed serious case of spread of toxin effect when BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic has been used at
+                  the recommended dose to treat frown lines, crow&apos;s feet lines, forehead lines, and/or platysma
+                  bands.<br>
+                  &nbsp;<br>
+                  BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic may cause
+                  loss of strength or general muscle weakness, vision problems, or dizziness within hours to weeks of
+                  receiving BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic.
+                  <b>If this happens, do not drive a car, operate machinery, or do other dangerous activities.</b><br>
+                  &nbsp;<br>
+                  <b>Serious and/or immediate allergic reactions have been reported,</b> including itching, rash, red
+                  itchy welts, wheezing, asthma symptoms, or dizziness or feeling faint. Get medical help right away if
+                  you are wheezing or have asthma symptoms, or if you become dizzy or faint.<br>
+                  &nbsp;<br>
+                  <b>Do not receive BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup>
+                    Cosmetic if you</b> are allergic to any of the ingredients in BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic (see Medication
+                  Guide for ingredients); had an allergic reaction to any other botulinum toxin product such as Myobloc
+                  (rimabotulinumtoxinB), Dysport (abobotulinumtoxinA), Xeomin (incobotulinumtoxinA), Jeuveau
+                  (prabotulinumtoxinA-xvfs), Daxxify (daxibotulinumtoxinA-lanm), or Letybo (letibotulinumtoxinA-wlbg);
+                  or have a skin infection at the planned injection site. This list may not include all available
+                  botulinum toxin products.<br>
+                  &nbsp;<br>
+                  <b>Tell your doctor about all your muscle or nerve conditions,</b> such as ALS or Lou Gehrig&apos;s
+                  disease, myasthenia gravis, or Lambert-Eaton syndrome, as you may be at increased risk of serious side
+                  effects, including difficulty swallowing and difficulty breathing, from standard doses of BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic.<br>
+                  &nbsp;<br>
+                  <b>Tell your doctor about all your medical conditions,</b> including surgery or plans to have surgery
+                  on your face, trouble raising your eyebrows, drooping eyelids, any other abnormal facial change, are
+                  pregnant or plan to become pregnant (it is not known if BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic can harm your
+                  unborn baby), or are breastfeeding or plan to (it is not known if BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic passes into breast
+                  milk).<br>
+                  &nbsp;<br>
+                  <b>Tell your doctor about all the medicines you take,</b> including prescription and over-the-counter
+                  medicines, vitamins, and herbal supplements. Using BOTOX<sup
+                    style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic with certain other
+                  medicines may cause serious side effects. <b>Do not start any new medicines until you have told your
+                    doctor that you have received BOTOX<sup
+                      style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic in the
+                    past.</b><br>
+                  &nbsp;<br>
+                  Tell your doctor if you have received any other botulinum toxin product in the last 4 months; have
+                  received injections of botulinum toxin such as Myobloc, Dysport, Xeomin, Jeuveau, Daxxify, or Letybo
+                  in the past (tell your doctor exactly which product you received); have recently received an
+                  antibiotic by injection; take muscle relaxants; take an allergy or cold medicine; take a sleep
+                  medicine; or take aspirin-like products or blood thinners.<br>
+                  &nbsp;<br>
+                  <b>Other side effects of BOTOX<sup
+                      style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic include</b> dry
+                  mouth; discomfort or pain at the injection site; tiredness; headache; neck pain; and eye problems,
+                  including double vision, blurred vision, decreased eyesight, drooping eyelids and eyebrows, swelling
+                  of eyelids, and dry eyes.<br>
+                  &nbsp;<br>
+                  <b>Approved Uses</b><br>
+                  BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Cosmetic is a
+                  prescription medicine that is injected into muscles and used to temporarily improve the look of
+                  moderate to severe forehead lines, crow&apos;s feet lines, frown lines between the eyebrows, and
+                  vertical bands connecting the jaw and neck (platysma bands) in adults.<br>
+                  &nbsp;<br>
+                  For more information, refer to the Medication Guide or talk with your doctor.<br>
+                  &nbsp;<br>
+                  To report a side effect, please call Allergan Aesthetics at 1-&zwnj;800&zwnj;-678&zwnj;-1605.<br>
+                  &nbsp;<br>
+                  <b>Please see BOTOX<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup>
+                    Cosmetic full <a
+                      href="https://www.rxabbvie.com/pdf/botox-cosmetic_pi.pdf?lid=qtjv1qzhtnzq"
+                      target="_blank"
+                      style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Product
+                      Information</a>, including Boxed Warning and <a
+                      href="https://www.rxabbvie.com/pdf/botox_medguide.pdf?lid=z1ctto3hj4nl"
+                      target="_blank"
+                      style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Medication
+                      Guide</a>.</b>
+                </td>
+              </tr>
+            </table>
+            <!-- Botox ISI End -->
+            <!-- Offer Info Pod Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0px 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                  <b>Offer Information</b><br>
+                  Must be an All&#275; Member to redeem. This offer can only be redeemed at participating All&#275;
+                  provider offices. See offer <a href="https://alle.com/account/wallet?lid=58yrx78qlwsx" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Terms and
+                    Conditions</a>.
+                </td>
+              </tr>
+            </table>
+            <!-- Offer Info Pod End -->
+            <!-- Footer Start -->
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+              style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
+              <tr>
+                <td bgcolor="#FFFFFF" align="center"
+                  style="padding: 40px 40px 24px 40px; background-color: #FFFFFF; border-top: 1px solid black;">
+                  <a href="https://alle.com/?lid=ckduz77jjkmi" target="_blank">
+                    <img alt="All&#275;&reg; logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/675a15b2d06e910063d22740/original.png?1733957041"
+                      width="70" border="0" style="display:block; width: 70px; height: auto;">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px;">
+                  &copy; 2026 AbbVie. All rights reserved. All&#275; and its design are trademarks of Allergan, Inc., an AbbVie company. BOTOX and its design are trademarks of Allergan, Inc., an AbbVie company. Allergan Aesthetics reserves the right to alter or cancel the program with no advance notice or obligation. AbbVie Inc., 1&nbsp;North Waukegan R&zwj;d.,&zwj; North Chicago,&zwj;I&zwj;L 6&zwj;0064 U&zwj;SA. SOLICITATION. US-PRT-02303 02&zwnj;/26<br>&nbsp;<br>
+                  <b>Please do not reply to this email</b>. If you would like to contact us, please mail all
+                  communications to: Allergan, P.O. Box 19534, &zwnj;Irvine, CA &zwnj;92623 USA.
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
+                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; font-weight: 700;">
+                  <a href="https://privacy.abbvie/privacy-policies/us-privacy-policy.html?lid=cj0chknwh1om" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Privacy
+                    Notice</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="https://www.allerganaesthetics.com/?lid=q7p6u9dcvs59" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">AllerganAesthetics.com</a>&nbsp;
+                  <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="https://www.abbvie.com/contactus.html?lid=01biioe36lwk" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Contact
+                    Us</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="{{${preference_center_url}}}" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Email
+                    Preferences</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
+                    href="{{${preference_center_url}}}" target="_blank"
+                    style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Unsubscribe</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFCB8"
+                  style="padding: 40px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 20px; mso-line-height-rule: exactly; line-height: 28px;">
+                  Brought to you by Allē <br>
+                  Your premier loyalty program
+                </td>
+              </tr>
+            </table>
+            <!-- Footer End -->
+          </div>
+          <!--[if mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

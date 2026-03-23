@@ -1,0 +1,54 @@
+{% comment %} Exract the wallet offers that match the Canvas entry criteria, then pick one of them to use to populate all the dynamic fields {% endcomment %}
+{% assign now = 'now' | date: '%s' %}
+{% assign now_formatted = now | date: '%Y-%m-%d %H:%M:%S' %}
+{% assign ts_1 = now | plus: 3801600 | date: '%Y-%m-%d %H:%M:%S' %} {% comment %} 44 days in seconds {% endcomment %}
+{% assign ts_2 = now | plus: 3974400 | date: '%Y-%m-%d %H:%M:%S' %} {% comment %} 46 days in seconds {% endcomment %}
+
+{% assign segmented_nested_objects = '' | split: '' %}
+{% assign obj_array = {{custom_attribute.${wallet}}} %}
+
+{% for obj in obj_array %}
+    {% assign has_valid_activation_type = false %}
+    {% if obj["activation_type"] == 'OPT_IN' or obj["activation_type"] == 'GIVEN' %}
+      {% assign has_valid_activation_type = true %}
+    {% endif %}
+
+    {% assign has_valid_value_type = false %}
+    {% if obj["offer_value_type"] == 'DOLLARS_OFF' %}
+      {% assign has_valid_value_type = true %}
+    {% endif %}
+
+    {% assign has_valid_value_unit = false %}
+    {% if obj["value_unit"] == 'dollar' or obj["value_unit"] == 'cent' %}
+      {% assign has_valid_value_unit = true %}
+    {% endif %}
+
+    {% assign has_valid_expiration_date = false %}
+    {% if obj["promotion_end"] != blank and obj["promotion_end"] >= now_formatted and obj["promotion_end"] >= ts_1 and obj["promotion_end"] <= ts_2 %}
+      {% assign has_valid_expiration_date = true %}
+    {% endif %}
+
+  {% if has_valid_activation_type and has_valid_value_type and has_valid_value_unit and has_valid_expiration_date %}
+    {% assign segmented_nested_objects = obj_array | slice: forloop.index0 | concat: segmented_nested_objects %}
+  {% endif %}
+
+{% endfor %}
+
+{% assign segmented_nested_objects = segmented_nested_objects | reverse %}
+
+{% assign offer = segmented_nested_objects[0] %}
+
+{% comment %} This calculation exists because the promotion end date in the wallet was one day ahead of what we actually wanted to display, so we needed to subtract one day before buildsing the display string. As of 02/23/2026 this has been corrected and the promotion end date is now the actual date we want to display. We are leaving this block of code here for the mean time in case we need to roll back for whatever reason, but it essential does nothing since we are subtracting '0' now.{% endcomment %}
+{% assign seconds_in_a_day = 86400 %}
+{% assign original_seconds = offer["promotion_end"] | date: "%s" %}
+{% assign new_seconds = original_seconds | minus: 0 %}
+
+{% assign Offer_Expiration_Date = new_seconds | date: "%m/%d/%y" %}
+
+{% comment %} Track the UMID {% endcomment %}
+{% assign umid = offer["universal_marketing_id"] %}
+{% message_extras :key umid :value {{umid}} %}
+
+{% comment %} Track the promotion_id {% endcomment %}
+{% assign promotion_id = offer["promotion_id"] %}
+{% message_extras :key promotion_id :value {{promotion_id}} %}
