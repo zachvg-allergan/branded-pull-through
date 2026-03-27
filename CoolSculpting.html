@@ -90,6 +90,10 @@
         line-height: 22px !important;
       }
 
+      .mb-line-height-30 {
+        line-height: 30px !important;
+      }
+
       .mb-line-height-32 {
         line-height: 32px !important;
       }
@@ -112,6 +116,10 @@
 
       .mb-letter-spacing-negative-point-3 {
         letter-spacing: -0.3px !important;
+      }
+
+      .mb-vertical-align-8 {
+        vertical-align: 8px !important;
       }
 
       .mb-width-100 {
@@ -243,6 +251,10 @@
         font-size: 14px !important;
       }
 
+      .mb-380-font-size-24 {
+        font-size: 24px !important;
+      }
+
       .mb-380-font-size-28 {
         font-size: 28px !important;
       }
@@ -257,6 +269,10 @@
 
       .mb-380-font-size-46 {
         font-size: 46px !important;
+      }
+
+      .mb-380-line-height-28 {
+        line-height: 28px !important;
       }
 
       .mb-380-line-height-36 {
@@ -436,45 +452,47 @@
             </table>
             <!-- Preheader End -->
             <!-- Header Start -->
-            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"
               style="padding:0px; margin:0px; width:100%; background-color: #FFFFFF">
               <tr>
-                <td class="dt" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF;">
-                  <a href="https://alle.com/?lid=sxp9k02g6cbr" target="_blank">
-                    <img alt="All&#275;&reg; logo"
-                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6e6c92a0063edf187/original.png?1733871350"
-                      width="640" border="0" style="display:block; width: 100%; max-width: 640px; height: auto;">
+                <td bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; width: 45%;">
+                  <a href="https://alle.com/?lid=pejcqqkpudw8" target="_blank">
+                    <img alt="Allē logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/69c6f19a402d070063fbeafa/original.png?1774645657"
+                      width="288" border="0" style="display:block; width: 100%; max-width: 288px; height: auto;">
                   </a>
                 </td>
-                <td class="mb" bgcolor="#FFFFFF" align="center" style="display: none; background-color: #FFFFFF;">
-                  <a href="https://alle.com/?lid=1vk8yk06wxzp" target="_blank">
-                    <img alt="All&#275;&reg; logo"
-                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/6758c6f6a4948100631ef644/original.png?1733871350"
-                      width="480" border="0" style="display: block; width: 100%; max-width: 480px; height: auto;">
+                <td bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; width: 55%;">
+                  <a href="https://alle.com/treatment-guide/coolsculpting" target="_blank">
+                    <img alt="CoolSculpting logo"
+                      src="https://braze-images.com/appboy/communication/assets/image_assets/images/69c6f19a266f4d0063d5dbae/original.png?1774645657"
+                      width="352" border="0" style="display:block; width: 100%; max-width: 352px; height: auto;">
                   </a>
                 </td>
               </tr>
-              <tr>
-                <td class="mb-font-size-14" align="center" valign="middle" bgcolor="#FFFCB8" height="24"
+              </table>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0px; margin:0px; width:100%; background-color: #FFFFFF">
+                <tr>
+                  <td class="mb-font-size-14" align="center" valign="middle" bgcolor="#FFFCB8" height="24"
                   style="padding: 10px 10px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 16px; letter-spacing: -0.2px; vertical-align: middle">
                   {% if ${first_name} != nil and ${first_name} != ""
                   %}{{${first_name}|capitalize}}&nbsp;&nbsp;|&nbsp;&nbsp;{% endif
                   %}{{custom_attribute.${alle_available_points} | default: 0 | number_with_delimiter }}
-                  pts&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://alle.com/account/wallet?lid=j5upxgjdlggd" target="_blank"
+                  pts&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://alle.com/account/wallet?lid=kvzvgjfb6nrm" target="_blank"
                     style="color:#000000; text-decoration:underline!important;">See Wallet</a>
-                </td>
-              </tr>
+                  </td>
+                </tr>
             </table>
             <!-- Header End -->
             <!-- Pod 1 Start -->
             <table role="presentation" cellpadding="0" cellspacing="0" border="0"
               style="padding: 0px; margin: 0px; width: 100%;">
               <tr>
-                <td class="headline-1 mb-letter-spacing-negative-point-3 mb-380-padding-25-horizontal" align="left"
+                <td class="mb-font-size-28 mb-line-height-30 mb-380-font-size-24 mb-380-line-height-28 mb-letter-spacing-negative-point-3 mb-380-padding-25-horizontal" align="left"
                   valign="middle" bgcolor="#A1C1FF"
-                  style="padding: 40px; background-color: #A1C1FF; font-family: Arial, sans-serif; color: #090909; font-size: 60px; mso-line-height-rule: exactly; line-height: 62px; font-weight:700; letter-spacing: -3px;">
-                  A ${{context.${value}}} CoolSculpting<sup class="superscript-4"
-                    style="font-size: 24px; line-height: 0; vertical-align:26px;">&reg;</sup> offer is in your
+                  style="padding: 40px 36px 40px 36px; background-color: #A1C1FF; font-family: Arial, sans-serif; color: #090909; font-size: 56px; mso-line-height-rule: exactly; line-height: 58px; font-weight:700; letter-spacing: -3px;">
+                  A ${{context.${value}}} CoolSculpting<sup class="mb-font-size-14 mb-vertical-align-8"
+                    style="font-size: 16px; line-height: 0; vertical-align:24px;">&reg;</sup> offer is in your
                   Wallet!
                 </td>
               </tr>
@@ -487,13 +505,13 @@
               </tr>
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" bgcolor="#D0E0FF"
-                  style="background-color: #D0E0FF; padding: 16px 40px; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
+                  style="background-color: #D0E0FF; padding: 16px 36px; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px; letter-spacing: -0.2px;">
                   Jazmine, Kenid, and Candice were treated on their abdomen and flanks with CoolSculpting<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Elite. Jazmine was also treated on her thighs and upper arms. Kenid was also treated on her bra and back fat. Candice was also treated on her thighs, banana rolls, and upper arms. Results may vary.
                 </td>
               </tr>
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#A1C1FF"
-                  style="padding: 40px; background-color: #A1C1FF;">
+                  style="padding: 40px 36px 40px 36px; background-color: #A1C1FF;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0"
                     style="padding: 0px; margin: 0px; width: 100%;">
                     <tr>
@@ -501,7 +519,7 @@
                         style="padding: 0 0 40px 0; background-color: #A1C1FF; font-family: Arial, sans-serif; color: #090909; font-size: 16px; mso-line-height-rule: exactly; line-height: 22px; letter-spacing: -0.2px;">
                         Your special offer won't last forever! Redeem on your CoolSculpting treatment to enjoy ${{context.${value}}} off. Hurry&mdash;offer expires {{context.${expiration_date}}}.<br>
                         &nbsp;<br>
-                        Book your consultation today!
+                        Book your appointment today!
                       </td>
                     </tr>
                     <tr>
@@ -535,7 +553,7 @@
               style="padding: 0px; margin: 0px; width: 100%; background-color: #FCF4E8;">
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="center" valign="middle" bgcolor="#FCF4E8"
-                  style="padding: 40px; background-color: #FCF4E8;">
+                  style="padding: 40px 36px 40px 36px; background-color: #FCF4E8;">
                   <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FCF4E8"
                     style="padding: 0px; margin: 0px; width: 100%; background-color: #FCF4E8;">
                     <tr>
@@ -572,7 +590,7 @@
               style="padding: 0px; margin: 0px; width: 100%;">
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="center" valign="middle" bgcolor="#D0E0FF"
-                  style="padding: 40px; background-color: #D0E0FF;">
+                  style="padding: 40px 36px 40px 36px; background-color: #D0E0FF;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#D0E0FF"
                     style="padding: 0px; margin: 0px; width: 100%; background-color: #D0E0FF;">
                     <tr>
@@ -603,7 +621,7 @@
                         <img
                           alt="Before and after of a woman who received DiamondGlow"
                           src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bd7789a64c4500639cb9e9/original.png?1774024584"
-                          width="560" border="0" style="display: block; width: 100%; height: auto;">
+                          width="568" border="0" style="display: block; width: 100%; height: auto;">
                       </td>
                     </tr>
                     <tr>
@@ -682,7 +700,7 @@
             <!-- Coolsculpting ISI Start -->
             <table cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
               <tr>
-                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF" style="padding: 0px 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF" style="padding: 0px 40px 36px 36px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
                   <a name="coolsculpting-isi" style="height: 0px;">&nbsp;</a><br>
                   <b>CoolSculpting<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> and CoolSculpting<sup style="font-size: 8px; line-height: 0; vertical-align:4px;">&reg;</sup> Elite Important Information</b><br>
                   &nbsp;<br>
@@ -710,7 +728,7 @@
               style="padding: 0px; margin: 0px; width: 100%; background-color: #FFFFFF;">
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
-                  style="padding: 0px 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
+                  style="padding: 0px 36px 40px 36px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; line-height: 18px;">
                   <b>Offer Information</b><br>
                   Must be an All&#275; Member to redeem. This offer can only be redeemed at participating All&#275;
                   provider offices. See offer <a href="https://alle.com/account/wallet?lid=h9dmigzrbnie" target="_blank"
@@ -735,7 +753,7 @@
               </tr>
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
-                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px;">
+                  style="padding: 0 36px 40px 36px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 18px;">
                   &copy; 2026 AbbVie. All rights reserved. All trademarks are the property of their respective owners. Allergan Aesthetics reserves the right to alter or cancel the program with no advance notice or obligation. AbbVie Inc., 1&nbsp;North Waukegan R&zwj;d.,&zwj; North Chicago,&zwj;I&zwj;L 6&zwj;0064 U&zwj;SA. SOLICITATION. US-BC-00921 03&zwnj;/26<br>&nbsp;<br>
                   <b>Please do not reply to this email</b>. If you would like to contact us, please mail all
                   communications to: Allergan, P.O. Box 19534, &zwnj;Irvine, CA &zwnj;92623 USA.
@@ -743,7 +761,7 @@
               </tr>
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFFFF"
-                  style="padding: 0 40px 40px 40px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; font-weight: 700;">
+                  style="padding: 0 36px 40px 36px; background-color: #FFFFFF; font-family: Arial, sans-serif; color: #090909; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; font-weight: 700;">
                   <a href="https://privacy.abbvie/privacy-policies/us-privacy-policy.html?lid=cyunksr2ff4w" target="_blank"
                     style="text-decoration: underline !important; text-decoration: underline; color: #090909;">Privacy
                     Notice</a>&nbsp; <span class="dt">|</span> &nbsp;<br class="mb" style="display: none;"><a
@@ -762,9 +780,9 @@
               </tr>
               <tr>
                 <td class="mb-380-padding-25-horizontal" align="left" valign="middle" bgcolor="#FFFCB8"
-                  style="padding: 40px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 20px; mso-line-height-rule: exactly; line-height: 28px;">
+                  style="padding: 40px 36px 40px 36px; background-color: #FFFCB8; font-family: Arial, sans-serif; color: #090909; font-size: 20px; mso-line-height-rule: exactly; line-height: 28px;">
                   Brought to you by Allē <br>
-                  Your premier loyalty program
+                  Your premier aesthetics loyalty program
                 </td>
               </tr>
             </table>
